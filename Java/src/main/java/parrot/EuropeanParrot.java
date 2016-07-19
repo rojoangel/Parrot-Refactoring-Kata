@@ -8,7 +8,7 @@ class EuropeanParrot extends Parrot {
     private static final boolean IS_NAILED = false;
 
     public EuropeanParrot() {
-        super(ParrotTypeEnum.EUROPEAN, NUMBER_OF_COCONUTS, VOLTAGE, IS_NAILED);
+        super(ParrotTypeEnum.EUROPEAN, VOLTAGE, IS_NAILED);
     }
 
     public double getSpeed() {

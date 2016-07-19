@@ -8,7 +8,7 @@ class AfricanParrot extends Parrot {
     private int numberOfCoconuts;
 
     public AfricanParrot(int numberOfCoconuts) {
-        super(ParrotTypeEnum.AFRICAN, numberOfCoconuts, VOLTAGE, IS_NAILED);
+        super(ParrotTypeEnum.AFRICAN, VOLTAGE, IS_NAILED);
         this.numberOfCoconuts = numberOfCoconuts;
     }
 

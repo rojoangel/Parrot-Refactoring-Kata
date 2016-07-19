@@ -10,7 +10,7 @@ public class ParrotFactory {
             case AFRICAN:
                 return new AfricanParrot(numberOfCoconuts);
             default:
-                return new Parrot(type, numberOfCoconuts, voltage, isNailed);
+                return new Parrot(type, voltage, isNailed);
         }
     }
 }
