@@ -16,18 +16,22 @@ public class Parrot {
     public double getSpeed() {
         switch(type) {
             case NORWEGIAN_BLUE:
-                return (isNailed) ? 0 : getBaseSpeed(voltage);
+                return new NorwegianParrot().getSpeed();
         }
         throw new RuntimeException("Should be unreachable");
     }
 
-    private double getBaseSpeed(double voltage) {
-        return Math.min(24.0, voltage*getBaseSpeed());
+    private class NorwegianParrot {
+        public double getSpeed() {
+            return (isNailed) ? 0 : getBaseSpeed(voltage);
+        }
+
+        private double getBaseSpeed() {
+            return 12.0;
+        }
+
+        private double getBaseSpeed(double voltage) {
+            return Math.min(24.0, voltage*getBaseSpeed());
+        }
     }
-
-    private double getBaseSpeed() {
-        return 12.0;
-    }
-
-
 }
