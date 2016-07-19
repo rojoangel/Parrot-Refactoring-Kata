@@ -1,6 +1,6 @@
 package parrot;
 
-class EuropeanParrot implements ParrotInterface {
+class EuropeanParrot implements Parrot {
 
     public double getSpeed() {
         return 12.0;

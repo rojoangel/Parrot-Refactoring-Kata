@@ -1,7 +1,7 @@
 package parrot;
 
 
-class AfricanParrot implements ParrotInterface {
+class AfricanParrot implements Parrot {
 
     private int numberOfCoconuts;
 
