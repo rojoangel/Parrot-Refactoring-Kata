@@ -3,10 +3,12 @@ package parrot;
 
 class AfricanParrot extends Parrot {
 
+    private static final int VOLTAGE = 0;
+    private static final boolean IS_NAILED = false;
     private int numberOfCoconuts;
 
     public AfricanParrot(int numberOfCoconuts) {
-        super(ParrotTypeEnum.AFRICAN, numberOfCoconuts, 0, false);
+        super(ParrotTypeEnum.AFRICAN, numberOfCoconuts, VOLTAGE, IS_NAILED);
         this.numberOfCoconuts = numberOfCoconuts;
     }
 
