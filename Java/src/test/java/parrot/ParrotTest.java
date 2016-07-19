@@ -8,43 +8,43 @@ public class ParrotTest {
 
     @Test
     public void getSpeedOfEuropeanParrot() {
-        Parrot parrot = ParrotFactory.create(ParrotTypeEnum.EUROPEAN, 0, 0, false);
+        ParrotInterface parrot = ParrotFactory.create(ParrotTypeEnum.EUROPEAN, 0, 0, false);
         assertEquals(parrot.getSpeed(), 12.0);
     }
 
     @Test
     public void getSpeedOfAfricanParrot_With_One_Coconut() {
-        Parrot parrot = ParrotFactory.create(ParrotTypeEnum.AFRICAN, 1, 0, false);
+        ParrotInterface parrot = ParrotFactory.create(ParrotTypeEnum.AFRICAN, 1, 0, false);
         assertEquals(parrot.getSpeed(), 3.0);
     }
 
     @Test
     public void getSpeedOfAfricanParrot_With_Two_Coconuts() {
-        Parrot parrot = ParrotFactory.create(ParrotTypeEnum.AFRICAN, 2, 0, false);
+        ParrotInterface parrot = ParrotFactory.create(ParrotTypeEnum.AFRICAN, 2, 0, false);
         assertEquals(parrot.getSpeed(), 0.0);
     }
 
     @Test
     public void getSpeedOfAfricanParrot_With_No_Coconuts() {
-        Parrot parrot = ParrotFactory.create(ParrotTypeEnum.AFRICAN, 0, 0, false);
+        ParrotInterface parrot = ParrotFactory.create(ParrotTypeEnum.AFRICAN, 0, 0, false);
         assertEquals(parrot.getSpeed(), 12.0);
     }
 
     @Test
     public void getSpeedNorwegianBlueParrot_nailed() {
-        Parrot parrot = ParrotFactory.create(ParrotTypeEnum.NORWEGIAN_BLUE, 0, 0, true);
+        ParrotInterface parrot = ParrotFactory.create(ParrotTypeEnum.NORWEGIAN_BLUE, 0, 0, true);
         assertEquals(parrot.getSpeed(), 0.0);
     }
 
     @Test
     public void getSpeedNorwegianBlueParrot_not_nailed() {
-        Parrot parrot = ParrotFactory.create(ParrotTypeEnum.NORWEGIAN_BLUE, 0, 1.5, false);
+        ParrotInterface parrot = ParrotFactory.create(ParrotTypeEnum.NORWEGIAN_BLUE, 0, 1.5, false);
         assertEquals(parrot.getSpeed(), 18.0);
     }
 
     @Test
     public void getSpeedNorwegianBlueParrot_not_nailed_high_voltage() {
-        Parrot parrot = ParrotFactory.create(ParrotTypeEnum.NORWEGIAN_BLUE, 0, 4, false);
+        ParrotInterface parrot = ParrotFactory.create(ParrotTypeEnum.NORWEGIAN_BLUE, 0, 4, false);
         assertEquals(parrot.getSpeed(), 24.0);
     }
 }

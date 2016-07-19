@@ -2,7 +2,7 @@ package parrot;
 
 public class ParrotFactory {
 
-    public static Parrot create(ParrotTypeEnum type, int numberOfCoconuts, double voltage, boolean isNailed)
+    public static ParrotInterface create(ParrotTypeEnum type, int numberOfCoconuts, double voltage, boolean isNailed)
     {
         switch (type) {
             case EUROPEAN:
