@@ -18,7 +18,7 @@ public class Parrot {
     public double getSpeed() {
         switch(type) {
             case AFRICAN:
-                return new AfricanParrot().getSpeed();
+                return new AfricanParrot(this.numberOfCoconuts).getSpeed();
             case NORWEGIAN_BLUE:
                 return (isNailed) ? 0 : getBaseSpeed(voltage);
         }
@@ -34,7 +34,12 @@ public class Parrot {
     }
 
 
-    private class AfricanParrot {
+    private class AfricanParrot extends Parrot {
+
+        public AfricanParrot(int numberOfCoconuts) {
+            super(ParrotTypeEnum.AFRICAN, numberOfCoconuts, 0, false);
+        }
+
         public double getSpeed() {
             return Math.max(0, getBaseSpeed() - getLoadFactor() * numberOfCoconuts);
         }
