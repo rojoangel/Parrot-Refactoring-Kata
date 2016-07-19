@@ -2,6 +2,7 @@ package parrot;
 
 class NorwegianBlueParrot implements Parrot {
 
+    public static final double BASE_SPEED = 12.0;
     private final double voltage;
     private final boolean isNailed;
 
@@ -14,11 +15,7 @@ class NorwegianBlueParrot implements Parrot {
         return (isNailed) ? 0 : getBaseSpeed(voltage);
     }
 
-    private double getBaseSpeed() {
-        return 12.0;
-    }
-
     private double getBaseSpeed(double voltage) {
-        return Math.min(24.0, voltage * getBaseSpeed());
+        return Math.min(24.0, voltage * BASE_SPEED);
     }
 }
