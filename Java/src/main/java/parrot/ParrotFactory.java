@@ -9,6 +9,8 @@ public class ParrotFactory {
                 return new EuropeanParrot();
             case AFRICAN:
                 return new AfricanParrot(numberOfCoconuts);
+            case NORWEGIAN_BLUE:
+                return new NorwegianBlueParrot(voltage, isNailed);
             default:
                 return new Parrot(type, voltage, isNailed);
         }
