@@ -1,5 +1,9 @@
 package parrot;
 
+import parrot.type.AfricanParrot;
+import parrot.type.EuropeanParrot;
+import parrot.type.NorwegianBlueParrot;
+
 public class ParrotFactory {
 
     public static Parrot create(ParrotTypeEnum type, int numberOfCoconuts, double voltage, boolean isNailed)

@@ -1,6 +1,8 @@
-package parrot;
+package parrot.type;
 
-class NorwegianBlueParrot implements Parrot {
+import parrot.Parrot;
+
+public class NorwegianBlueParrot implements Parrot {
 
     private static final double MAX_SPEED = 24.0;
     private final double voltage;

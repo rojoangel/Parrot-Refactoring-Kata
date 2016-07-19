@@ -1,7 +1,9 @@
-package parrot;
+package parrot.type;
 
 
-class AfricanParrot implements Parrot {
+import parrot.Parrot;
+
+public class AfricanParrot implements Parrot {
 
     private static final double LOAD_FACTOR = 9.0;
     private int numberOfCoconuts;
