@@ -16,14 +16,14 @@ public class Parrot {
     public double getSpeed() {
         switch(type) {
             case NORWEGIAN_BLUE:
-                return new NorwegianParrot(this.voltage, this.isNailed).getSpeed();
+                return new NorwegianBlueParrot(this.voltage, this.isNailed).getSpeed();
         }
         throw new RuntimeException("Should be unreachable");
     }
 
-    private class NorwegianParrot extends Parrot {
+    private class NorwegianBlueParrot extends Parrot {
 
-        public NorwegianParrot(double voltage, boolean isNailed) {
+        public NorwegianBlueParrot(double voltage, boolean isNailed) {
             super(ParrotTypeEnum.NORWEGIAN_BLUE, voltage, isNailed);
         }
 
