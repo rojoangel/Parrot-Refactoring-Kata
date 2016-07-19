@@ -14,10 +14,6 @@ public class Parrot {
     }
 
     public double getSpeed() {
-        switch(type) {
-            case NORWEGIAN_BLUE:
-                return new NorwegianBlueParrot(this.voltage, this.isNailed).getSpeed();
-        }
         throw new RuntimeException("Should be unreachable");
     }
 
