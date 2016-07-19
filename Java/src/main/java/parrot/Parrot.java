@@ -17,8 +17,6 @@ public class Parrot {
 
     public double getSpeed() {
         switch(type) {
-            case AFRICAN:
-                return new AfricanParrot(this.numberOfCoconuts).getSpeed();
             case NORWEGIAN_BLUE:
                 return (isNailed) ? 0 : getBaseSpeed(voltage);
         }
