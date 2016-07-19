@@ -12,7 +12,7 @@ public class ParrotFactory {
             case NORWEGIAN_BLUE:
                 return new NorwegianBlueParrot(voltage, isNailed);
             default:
-                return new Parrot(type, voltage, isNailed);
+                throw new RuntimeException("Inexistent parrot type");
         }
     }
 }
