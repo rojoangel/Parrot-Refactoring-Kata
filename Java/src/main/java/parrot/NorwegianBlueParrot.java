@@ -1,8 +1,7 @@
 package parrot;
 
 class NorwegianBlueParrot implements Parrot {
-
-    public static final double BASE_SPEED = 12.0;
+    
     private final double voltage;
     private final boolean isNailed;
 

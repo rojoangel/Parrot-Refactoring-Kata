@@ -3,7 +3,6 @@ package parrot;
 
 class AfricanParrot implements Parrot {
 
-    public static final double BASE_SPEED = 12.0;
     private int numberOfCoconuts;
 
     public AfricanParrot(int numberOfCoconuts) {
