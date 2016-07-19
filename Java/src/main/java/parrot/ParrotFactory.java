@@ -7,6 +7,8 @@ public class ParrotFactory {
         switch (type) {
             case EUROPEAN:
                 return new EuropeanParrot();
+            case AFRICAN:
+                return new AfricanParrot(numberOfCoconuts);
             default:
                 return new Parrot(type, numberOfCoconuts, voltage, isNailed);
         }
