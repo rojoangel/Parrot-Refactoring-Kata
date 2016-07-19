@@ -1,6 +1,6 @@
 package parrot;
 
-public class Parrot {
+public class Parrot implements ParrotInterface {
 
     private ParrotTypeEnum type;
     private double voltage;
