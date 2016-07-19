@@ -34,22 +34,4 @@ public class Parrot {
     }
 
 
-    private class AfricanParrot extends Parrot {
-
-        public AfricanParrot(int numberOfCoconuts) {
-            super(ParrotTypeEnum.AFRICAN, numberOfCoconuts, 0, false);
-        }
-
-        public double getSpeed() {
-            return Math.max(0, getBaseSpeed() - getLoadFactor() * numberOfCoconuts);
-        }
-
-        private double getBaseSpeed() {
-            return 12.0;
-        }
-
-        private double getLoadFactor() {
-            return 9.0;
-        }
-    }
 }
