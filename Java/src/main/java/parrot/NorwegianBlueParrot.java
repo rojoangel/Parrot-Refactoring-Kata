@@ -12,7 +12,10 @@ class NorwegianBlueParrot implements Parrot {
     }
 
     public double getSpeed() {
-        return (isNailed) ? 0 : getBaseSpeed(voltage);
+        if (isNailed)
+            return 0;
+
+        return getBaseSpeed(voltage);
     }
 
     private double getBaseSpeed(double voltage) {
