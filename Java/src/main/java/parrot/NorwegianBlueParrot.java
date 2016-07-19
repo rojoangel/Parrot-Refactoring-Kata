@@ -1,12 +1,11 @@
 package parrot;
 
-class NorwegianBlueParrot extends Parrot {
+class NorwegianBlueParrot implements ParrotInterface {
 
     private final double voltage;
     private final boolean isNailed;
 
     public NorwegianBlueParrot(double voltage, boolean isNailed) {
-        super(ParrotTypeEnum.NORWEGIAN_BLUE, voltage, isNailed);
         this.voltage = voltage;
         this.isNailed = isNailed;
     }
