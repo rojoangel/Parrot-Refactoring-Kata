@@ -2,7 +2,7 @@ package parrot;
 
 class NorwegianBlueParrot implements Parrot {
 
-    public static final double MAX_SPEED = 24.0;
+    private static final double MAX_SPEED = 24.0;
     private final double voltage;
     private final boolean isNailed;
 
