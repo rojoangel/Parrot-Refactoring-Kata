@@ -24,9 +24,4 @@ public class NorwegianBlueParrot implements Parrot {
         return Math.min(MAX_SPEED, voltage * BASE_SPEED);
     }
 
-    private class NailedParrot implements Parrot {
-        public double getSpeed() {
-            return 0;
-        }
-    }
 }
