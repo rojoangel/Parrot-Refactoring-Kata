@@ -2,20 +2,18 @@ package parrot;
 
 import parrot.type.AfricanParrot;
 import parrot.type.EuropeanParrot;
-import parrot.characteristics.Nailed;
+import parrot.type.NailedParrot;
 import parrot.type.NorwegianBlueParrot;
 
 public class ParrotFactory {
 
     public static Parrot create(ParrotTypeEnum type, int numberOfCoconuts, double voltage, boolean isNailed)
     {
-        Parrot parrot = createParrot(type, numberOfCoconuts, voltage);
-
         if (isNailed) {
-            return new Nailed(parrot);
+            return new NailedParrot();
         }
 
-        return parrot;
+        return createParrot(type, numberOfCoconuts, voltage);
     }
 
     private static Parrot createParrot(ParrotTypeEnum type, int numberOfCoconuts, double voltage) {
