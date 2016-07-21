@@ -18,7 +18,7 @@ public class ParrotFactory {
                 if (isNailed) {
                     return new NorwegianBlueNailedParrot();
                 }
-                return new NorwegianBlueParrot(voltage, isNailed);
+                return new NorwegianBlueParrot(voltage);
             default:
                 throw new RuntimeException("Inexistent parrot type");
         }
