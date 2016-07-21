@@ -15,12 +15,18 @@ public class NorwegianBlueParrot implements Parrot {
 
     public double getSpeed() {
         if (isNailed)
-            return 0;
+            return new NailedParrot().getSpeed();
 
         return getBaseSpeed(voltage);
     }
 
     private double getBaseSpeed(double voltage) {
         return Math.min(MAX_SPEED, voltage * BASE_SPEED);
+    }
+
+    private class NailedParrot implements Parrot {
+        public double getSpeed() {
+            return 0;
+        }
     }
 }
