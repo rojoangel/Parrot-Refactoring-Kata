@@ -15,7 +15,7 @@ public class NorwegianBlueParrot implements Parrot {
 
     public double getSpeed() {
         if (isNailed)
-            return new NailedParrot().getSpeed();
+            return new NorwegianBlueNailedParrot().getSpeed();
 
         return getBaseSpeed(voltage);
     }
