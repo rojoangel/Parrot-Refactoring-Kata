@@ -2,6 +2,7 @@ package parrot;
 
 import parrot.type.AfricanParrot;
 import parrot.type.EuropeanParrot;
+import parrot.type.NorwegianBlueNailedParrot;
 import parrot.type.NorwegianBlueParrot;
 
 public class ParrotFactory {
@@ -14,6 +15,9 @@ public class ParrotFactory {
             case AFRICAN:
                 return new AfricanParrot(numberOfCoconuts);
             case NORWEGIAN_BLUE:
+                if (isNailed) {
+                    return new NorwegianBlueNailedParrot();
+                }
                 return new NorwegianBlueParrot(voltage, isNailed);
             default:
                 throw new RuntimeException("Inexistent parrot type");
