@@ -12,10 +12,6 @@ public class NorwegianBlueParrot implements Parrot {
     }
 
     public double getSpeed() {
-        return getBaseSpeed(voltage);
-    }
-
-    private double getBaseSpeed(double voltage) {
         return Math.min(MAX_SPEED, voltage * BASE_SPEED);
     }
 
